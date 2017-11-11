@@ -5,13 +5,13 @@ end
 def batch_badge_creator(attendees)
   new_greetings = []
   attendees.each {|attendees| new_greetings << "Hello, my name is #{attendees}."}
-  new_greetings
+  $new_greetings
 end
 
 def assign_rooms(attendees)
   room_assignments = []
   attendees.each_with_index {|speaker, rooms| room_assignments << "Hello, #{speaker}! You'll be assigned to room #{rooms + 1}!"}
-  room_assignments
+  $room_assignments
 end
 
 def printer(attendees)
